@@ -140,7 +140,7 @@ namespace Teru.Code.Zimbra
             {
                 return new Dictionary<int, string>()
                 {
-                    { 0, response_dict["Fault"]["Detail"]["Error"]["Code"].GetValue<string>() }
+                    { 0, GetResponse()["Fault"]["Detail"]["Error"]["Code"].GetValue<string>() }
                 };
             }
         }
@@ -161,7 +161,7 @@ namespace Teru.Code.Zimbra
             {
                 return new Dictionary<int, string>()
                 {
-                    { 0, response_dict["Fault"]["Reason"]["Text"].GetValue<string>() }
+                    { 0, GetResponse()["Fault"]["Reason"]["Text"].GetValue<string>() }
                 };
             }
         }

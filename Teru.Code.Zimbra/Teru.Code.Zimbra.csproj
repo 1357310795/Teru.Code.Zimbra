@@ -5,6 +5,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<LangVersion>latest</LangVersion>
+	<PackageProjectUrl>https://github.com/1357310795/Teru.Code.Zimbra</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/1357310795/Teru.Code.Zimbra</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+	<Description>Core framework for easily sending requests to the Zimbra SOAP-API (Port of https://github.com/Zimbra-Community/python-zimbra)</Description>
+	<AssemblyVersion>1.0.2.0</AssemblyVersion>
+	<VersionPrefix>1.0.2</VersionPrefix>
+	<FileVersion>$(AssemblyVersion)</FileVersion>
+	<Version>$(VersionPrefix)</Version>
   </PropertyGroup>
 
   <ItemGroup>

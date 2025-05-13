@@ -29,6 +29,17 @@ namespace Teru.Code.Zimbra
             }
         }
 
+        public ZimbraClient(HttpClient client, string url, int? timeout = null)
+        {
+            this.Url = url;
+            this.Timeout = timeout;
+            this._client = client;
+            if (timeout.HasValue)
+            {
+                _client.Timeout = TimeSpan.FromMilliseconds(timeout.Value);
+            }
+        }
+
         /// <summary>
         /// Convenience method to quickly generate a token
         /// </summary>
